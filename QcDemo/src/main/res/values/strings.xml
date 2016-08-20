@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">QcDemo</string>
+    <string name="contents_contact">文字</string>
+    <string name="contents_location">位置</string>
+    <string name="contents_text">哈哈哈</string>
+    <string name="contents_email">邮箱</string>
+    <string name="contents_phone">手机</string>
+    <string name="contents_sms">短信</string>
+</resources>
