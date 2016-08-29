@@ -1,1 +1,1 @@
-include ':providersample', ':aidlservice', ':aidllibrary', ':providersample', ':app', ':messengersample', ':socketsample', ':BinderPoolSample', ':QcDemo'
+include ':providersample', ':aidlservice', ':aidllibrary', ':providersample', ':app', ':messengersample', ':socketsample', ':BinderPoolSample', ':QcDemo', ':fullscreensample'
