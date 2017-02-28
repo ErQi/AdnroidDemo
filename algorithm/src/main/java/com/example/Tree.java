@@ -56,4 +56,12 @@ public class Tree {
             CSNode rightsib; // 右边兄弟结点
         }
     }
+
+    { // 标准的二叉树兑现
+        class BiTNode{
+            Object data;
+            BiTNode lchild;
+            BiTNode rchild;
+        }
+    }
 }
