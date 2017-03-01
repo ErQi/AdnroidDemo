@@ -73,7 +73,8 @@ public class TreeTest {
 //        preOrderTraverse(geBiTree());
 //        inOrderTraverse(geBiTree());
 //        postOrderTraverse(geBiTree());
-        floorOrderTraverse(geBiTree());
+//        floorOrderTraverse(geBiTree());
+        postOrderTraverse(geBiTree("ABCDEFGH###I##J#K",0));
     }
 
     public BiTree geBiTree() {
@@ -99,5 +100,18 @@ public class TreeTest {
         f.lchild = i;
         g.rchild = j;
         return a;
+    }
+
+    public BiTree geBiTree(String s, int index) {
+        if (index >= s.length()) {
+            return null;
+        }
+        if ("#".equals(s.substring(index, index + 1))) {
+            return null;
+        }
+        BiTree tree= new BiTree(s.substring(index, index + 1));
+        tree.lchild = geBiTree(s, 2 * index + 1);
+        tree.rchild = geBiTree(s, 2 * index + 2);
+        return tree;
     }
 }
